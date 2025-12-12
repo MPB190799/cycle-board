@@ -1,0 +1,131 @@
+/* =====================================
+   MB Cycle Board – Dark Mode
+   Investor Dashboard (Long-Term)
+   ===================================== */
+
+:root {
+  --bg-main: #0b0e13;
+  --bg-card: #121722;
+  --bg-card-hover: #161c2b;
+  --border: #1e2433;
+
+  --text-main: #e6e9ef;
+  --text-muted: #9aa4b2;
+
+  --green: #2ecc71;
+  --yellow: #f1c40f;
+  --red: #e74c3c;
+  --gold: #d4af37;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ---------- Header ---------- */
+
+header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ---------- Grid ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+/* ---------- Card ---------- */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ---------- Meta ---------- */
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+/* ---------- Status Colors ---------- */
+
+.badge.beginnt {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.badge.mitte {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.badge.spaet {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* ---------- Note ---------- */
+
+.note {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+
+/* ---------- Footer Info ---------- */
+
+.small {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
